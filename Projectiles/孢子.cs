@@ -26,7 +26,7 @@ namespace PVZ.Projectiles
         }
         public override void AI()
         {
-            int A =Dust.NewDust(projectile.Center, projectile.width, projectile.height,33, -projectile.velocity.X/2, -2F, 0, new Color(54,23,81), 1f);
+            int A =Dust.NewDust(projectile.Center, projectile.width, projectile.height, 33, -projectile.velocity.X/2, -2F, 0, new Color(54,23,81), 1f);
             Main.dust[A].noGravity = true;
         }
         public override void ModifyHitNPC(NPC target, ref int damage, ref float knockback, ref bool crit, ref int hitDirection)
